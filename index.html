@@ -26,20 +26,19 @@ var villes = { // Seules les villes ajoutées dans ce tableau sont affichées su
                // nombres dans l'url sont lat et lon :
                // https://www.google.com/maps/@50.4255595,2.8231708,12.95z
                // correspond à Lens, avec lat : 50.4255595 lon :2.3231708
-  "Paris": { "lat": 48.852969, "lon": 2.349903 }, //Nathan
-  "Brest": { "lat": 48.383, "lon": -4.500 },   //Ivana
+  "Saint-Cyprien": { "lat": 42.619, "lon": 3.003 }, //Nathan
+  "Skopje": { "lat": 42.0052, "lon": 21.4417 },   //Ivana
   "Quimper": { "lat": 48.000, "lon": -4.100 }, //Bruno
-  "Bayonne": { "lat": 43.500, "lon": -1.467 }, //Theo
-  "Bayonne": { "lat": 43.500, "lon": -1.467 }, //Noemie
-  "Bayonne": { "lat": 43.500, "lon": -1.467 }, //Eline
+  "Gaza": { "lat": 31.5167, "lon": 34.4500 }, //Theo
+"Nausicaa": { "lat": 50.730515945818524, "lon": 1.5945037008400498 }, //Noemie
+"Bayonne": { "lat": 43.500, "lon": -1.467 }, //Eline
   "Bayonne": { "lat": 43.500, "lon": -1.467 }, //Mathys
-  "Bayonne": { "lat": 43.500, "lon": -1.467 }, //Mathieu
-  "Bayonne": { "lat": 43.500, "lon": -1.467 }, //Clara
+  "Merville": { "lat": 50.642473159049906, "lon": 2.6386507156704933 }, //Mathieu 50.642473159049906, 2.6386507156704933
+  "Egg Island": { "lat": -63.673315586417836, "lon": -57.70728703577289 }, //Clara  
   "Beaucroissant": { "lat": 45.34100101130247, "lon": 5.470711581682605 }, //Jeoffrey
-
-  "Bayonne": { "lat": 43.500, "lon": -1.467 }, //Fathi
-  "Bayonne": { "lat": 43.500, "lon": -1.467 }, //Esteban
-  "Bayonne": { "lat": 43.500, "lon": -1.467 }  //Nicolas
+  "Lille": { "lat": 50.632, "lon": 3.058 }, //Fathi
+  "Montcuq": { "lat": 44.4002514, "lon": 1.3460275 }, //Esteban
+  "Bouzillé": { "lat": 47.3392561, "lon": -1.1483225 }  //Nicolas
 };
 
 window.onload = function(){
@@ -64,20 +63,20 @@ window.onload = function(){
 
       <!-- Début du div de la première ville --> <!-- NATHAN -->
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-        <div id="ville_Paris" class="card bg-dark m-2">
+        <div id="ville_Saint-Cyprien" class="card bg-dark m-2">
           <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
                 dans le tableau ville, en début de fichier -->
           <div class="card-header">
-            <div class="card-title h5">Paris</div>
+            <div class="card-title h5">Saint-Cyprien</div>
             <div class="card-subtitle text-gray">Capitale</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/130608_Saint-Cyprien-01.jpg/330px-130608_Saint-Cyprien-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Saint-Cyprien est une commune française, située dans l'est du département des Pyrénées-Orientales en région Occitanie.
           </div>
         </div>
       </div>
@@ -85,24 +84,24 @@ window.onload = function(){
 
       <!-- IVANA -->
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-        <div id="ville_Brest" class="card bg-dark m-2">
+        <div id="ville_Skopje" class="card bg-dark m-2">
           <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
                 dans le tableau ville, en début de fichier -->
           <div class="card-header">
-            <div class="card-title h5">Brest</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Skopje</div>
+            <div class="card-subtitle text-gray">Capitale de la Macédoine</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="skopje.jpg" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Un magnifique pays multiculturel 
           </div>
         </div>
       </div>
-      
+
       <!-- BRUNO -->
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
         <div id="ville_Quimper" class="card bg-dark m-2">
@@ -125,40 +124,40 @@ window.onload = function(){
 
       <!-- THEO -->
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-        <div id="ville_Bayonne" class="card bg-dark m-2">
+        <div id="ville_Gaza" class="card bg-dark m-2">
           <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
                 dans le tableau ville, en début de fichier -->
           <div class="card-header">
-            <div class="card-title h5">Bayonne</div>
+            <div class="card-title h5">Gaza</div>
             <div class="card-subtitle text-gray">Capitale</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="https://www.humanite.fr/wp-content/uploads/2026/10/p14-Gaza_MER.jpg" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Ne fermez pas les yeux.
           </div>
         </div>
       </div>
 
       <!-- NOEMIE -->
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-        <div id="ville_Bayonne" class="card bg-dark m-2">
+        <div id="ville_Nausicaa" class="card bg-dark m-2">
           <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
                 dans le tableau ville, en début de fichier -->
           <div class="card-header">
-            <div class="card-title h5">Bayonne</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Nausicaa</div>
+            <div class="card-subtitle text-gray">Aquarium</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="https://images.lanouvellerepublique.fr/image/upload/t_1020w/f_auto/5ad544c4469a458b7b8b456d" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Trop cool les fishies :3
           </div>
         </div>
       </div>
@@ -205,47 +204,57 @@ window.onload = function(){
 
       <!-- MATHIEU -->
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-        <div id="ville_Bayonne" class="card bg-dark m-2">
+        <div id="ville_Merville" class="card bg-dark m-2">
           <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
                 dans le tableau ville, en début de fichier -->
           <div class="card-header">
-            <div class="card-title h5">Bayonne</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Merville</div>
+            <div class="card-subtitle text-gray">Petite Ville</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img 
+              src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/H%C3%B4tel_de_Ville_de_Merville.JPG/1280px-H%C3%B4tel_de_Ville_de_Merville.JPG?utm_source=fr.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail" 
+              alt="Image: Hôtel de ville de Merville (Mairie)"
+              class="img-responsive" 
+              style="width: 320px; height: 200px; object-fit: cover;" 
+              loading="lazy"
+            >
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Merville est une commune française située dans le département du Nord, en région Hauts-de-France. <i>Wikipédia</i>
+            <br />
+            <strong>
+            Image par <a href="//commons.wikimedia.org/w/index.php?title=User:Laika&amp;action=edit&amp;redlink=1" class="new" title="User:Laika (page does not exist)">Laika</a> — <span class="int-own-work" lang="fr">Travail personnel</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=21361359">Lien</a>
+            </strong>
           </div>
         </div>
       </div>
 
       <!-- CLARA -->
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-        <div id="ville_Bayonne" class="card bg-dark m-2">
+        <div id="ville_Egg Island" class="card bg-dark m-2">
           <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
                 dans le tableau ville, en début de fichier -->
           <div class="card-header">
-            <div class="card-title h5">Bayonne</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Egg Island</div>
+            <div class="card-subtitle text-gray">Antarctique</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="https://wildnet.org/wp-content/uploads/what-do-penguins-do-for-the-environment_Adelie-penguins_Susan-McConnell-1024x683.jpg" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            &#129398;
           </div>
         </div>
       </div>
 
       <!-- JEOFFREY -->
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-        <div id="ville_Bayonne" class="card bg-dark m-2">
+        <div id="ville_Beaucroissant" class="card bg-dark m-2">
           <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
                 dans le tableau ville, en début de fichier -->
@@ -265,60 +274,60 @@ window.onload = function(){
 
       <!-- FATHI -->
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-        <div id="ville_Bayonne" class="card bg-dark m-2">
+        <div id="ville_Lille" class="card bg-dark m-2">
           <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
                 dans le tableau ville, en début de fichier -->
           <div class="card-header">
-            <div class="card-title h5">Bayonne</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Lille</div>
+            <div class="card-subtitle text-gray">Capitale des flandres</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Logo_ville_de_Lille.svg/langfr-1280px-Logo_ville_de_Lille.svg.png?utm_source=fr.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Avec 238 246 habitants intra-muros au dernier recensement en 2023, Lille est la dixième commune la plus peuplée de France, mais aussi la principale commune de la Métropole européenne de Lille, qui rassemble 94 autres communes dont Roubaix, Tourcoing et Villeneuve-d'Ascq, et compte près de 1,2 million d’habitants.
           </div>
         </div>
       </div>
 
       <!-- ESTEBAN -->
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-        <div id="ville_Bayonne" class="card bg-dark m-2">
+        <div id="ville_Montcuq" class="card bg-dark m-2">
           <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
                 dans le tableau ville, en début de fichier -->
           <div class="card-header">
-            <div class="card-title h5">Bayonne</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Montcuq</div>
+            <div class="card-subtitle text-gray">Montcuq-en-Quercy-Blanc</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img width="100%" src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Montcuq_%40_Chemin_de_Compostelle_01.jpg?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=original">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Montcuq /mɔ̃.kyk/ est une ancienne commune française située dans le département du Lot, en région Occitanie, devenue, le 1ᵉʳ janvier 2016, une composante de la commune nouvelle de Montcuq-en-Quercy-Blanc.
           </div>
         </div>
       </div>
 
       <!-- NICOLAS -->
       <div class="column col-xs-12 col-sm-6 col-md-3 col-2 col-lg-1">
-        <div id="ville_Bayonne" class="card bg-dark m-2">
+        <div id="ville_Bouzillé" class="card bg-dark m-2">
           <!--  L'id de la forme ville_A est nécessaire pour que le lien vers
                 la ville A fonctionne. Pensez à ajouter les coordonnées de A
                 dans le tableau ville, en début de fichier -->
           <div class="card-header">
-            <div class="card-title h5">Bayonne</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Bouzillé</div>
+            <div class="card-subtitle text-gray">Commune</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img width="100%" src="https://www.radiofrance.fr/pikapi/images/3ecccee9-32d4-4444-839f-722f99ace5c8/1200x680?webp=false">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Bouzillé est une commune française située dans le département de Maine-et-Loire.
           </div>
         </div>
       </div>
